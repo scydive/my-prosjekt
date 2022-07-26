@@ -2,9 +2,10 @@
 <body>
 
 </body>
-<template class="bod">
+<template>
 <div id="container">
-  <h1 id="logotxt">Test-Site Solutions</h1>
+  <img id="cover" src='./assets/placeholder2.jpg'>
+  <h1 @click="rand" id="info_text">Young hobby developer and student, this is my portfolio website.</h1>
   
 </div>
     
@@ -23,53 +24,66 @@ export default {
   data() {
     return {
       temp: '1',
-      awesome: false
     }
   },
   methods: {
     inc() {
       this.temp++
     }
-  }
+}
 }
 
 </script>
 
 <style>
-.bod {
-  background-color: orange;
+#container #info_text {
+  position: relative;
+  top: -230px;
+  right: -160px;
+  width: 240px;
+
 }
-#logotext {
-  text-shadow: 1px 1px 2px rgb(151, 62, 62);
-}
-#container {
-  margin: auto;
+#container #cover {
   width: 150px;
-  height: 300px;
-  text-shadow: 1px 1px 2px rgb(213, 118, 45);
-  
+  margin-right: 0%;
+  margin-top: 0%;
+  position: relative;
+  right: 31.5%;
+
 }
-#logotext {
-  text-shadow: 1px 1px 2px rgb(151, 62, 62);
+
+#container {
+  margin-left: 25%;
+  margin-top: 13%;
+  width: 400px;
+  height: 272px;
+  border-style: solid;
+  border-color: rgb(58, 61, 61);
+  border-width: 5px;
+  background-color: black;
+  color: azure;
+  font-family: "Ibarra+Real+Nova", serif;
+  font-size: small;
+  text-align: center;
+  padding: 0%;
+  
+  
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: right;
-  margin-top: 1px;
+  margin-top: 0px;
   margin-left: 0%;
   margin-right: 0%;
   height: 670px;
   max-width: 100%;
-  background-image: url('./assets/landskap2.jfif');
+  background-image: url(./assets/notowned.jpg);
   border-style: solid;
   border-width: 3px;
   border-color: rgb(36, 35, 37);
 }
-.pic {
-  max-width: 150%;
-  height: 200px;
-}
+
 
 </style>
